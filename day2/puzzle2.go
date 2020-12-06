@@ -30,18 +30,18 @@ func main() {
 
     correct := 0
 
-    for _, each_line := range text {
-      chunks := strings.Split(each_line, " ")
+    for _, eachLine := range text {
+      chunks := strings.Split(eachLine, " ")
       numbers := strings.Split(chunks[0], "-")
-      first_number, _ := strconv.Atoi(numbers[0])
-      second_number, _ := strconv.Atoi(numbers[1])
+      firstNumber, _ := strconv.Atoi(numbers[0])
+      secondNumber, _ := strconv.Atoi(numbers[1])
       letter := strings.ReplaceAll(chunks[1], ":", "")
       password := chunks[2]
       appears := 0
-      if letter[0] == password[first_number-1]{
+      if letter[0] == password[firstNumber-1]{
         appears = appears + 1
       }
-      if letter[0] == password[second_number-1]{
+      if letter[0] == password[secondNumber-1]{
         appears = appears + 1
       }
       if appears == 1{
