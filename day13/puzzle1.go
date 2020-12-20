@@ -35,7 +35,7 @@ func main() {
 
     buses := strings.Split(text[1], ",")
 
-    for i := 1; i < len(buses); i++{
+    for i := 0; i < len(buses); i++{
       if buses[i] != "x"{
         currentBusID, _ = strconv.Atoi(buses[i])
         elapsedTime = ((arrivalTime/currentBusID)*currentBusID + currentBusID) - arrivalTime
