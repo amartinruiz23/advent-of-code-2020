@@ -59,7 +59,6 @@ func main() {
     jump := busesInteger[0]
 
     for i := busesInteger[0]; !found; i+=jump{
-      fmt.Println(i)
       for j:=0 ; j < len(busesInteger) && !failed; j++{
         if firstDeparture == 0 {
           firstDeparture = i
